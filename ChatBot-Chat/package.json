@@ -1,0 +1,9 @@
+{
+  "name": "chat-bot-chat",
+  "version": "0.0.0",
+  "description": "ChatBot-Chat",
+  "main": "app.js",
+  "author": {
+    "name": "Lilie"
+  }
+}

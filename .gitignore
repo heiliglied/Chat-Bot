@@ -1,0 +1,3 @@
+/* Build Except */
+*.vs
+*.sln
