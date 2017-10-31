@@ -1,6 +1,14 @@
 /* Build Except */
+#visual studio
 *.vs
+*.vs/
 *.sln
+*.njsproj*
+obj/
+
+#node_module
+node_modules/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
