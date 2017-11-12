@@ -31,6 +31,7 @@
     <Compile Include="app.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="static\chat_stat.html" />
     <Content Include="static\style.css" />
   </ItemGroup>
   <ItemGroup>

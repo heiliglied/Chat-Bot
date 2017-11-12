@@ -1,0 +1,21 @@
+<div class="chatbot_wrap">
+    <div class="chatbot_head">
+        CHATBOT
+    </div>
+    <div class="chatbot_body">
+
+    </div>
+    <div class="chatbot_chatarea">
+        <div class="chatbot_chatbox">
+            <ul class="chatbot_inputarea">
+                <li>
+                    <div class="chatbot_input" id="chatbot_input" onkeypress="call_enter(this)" contentEditable="true"></div>
+                    <img src="emoji_icon.png" class="chatbot_callemoji" onclick="add_emoji();" width="24px" height="24px">
+                    <Button class="chatbot_sendbtn" type="button" onclick="return_message(event, document.getElementsByClassName('chatbot_input')[0])">
+                        Send!
+                    </Button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
