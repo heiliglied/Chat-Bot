@@ -93,7 +93,18 @@ var server = http.createServer(function (request, response) {
     //var querystring = url.parse(request.url, true);
     //var queries = querystring.query;
     //console.log(queries.type);
-}).listen(port);
+}).on('request', function (request, response) {
+
+    //리퀘스트 이벤트.
+    fs.readFile('static/chat_stat.html', function (error, data) {
+        response.writeHead(200, { 'Content-Type': 'text/html' });
+        response.end(data);
+        console.log(error);
+    });
+    
+    }).listen(port, function () {
+        console.log('listen');
+    });
 
 io.listen(server).sockets.on('connection', function (socket) {
     
